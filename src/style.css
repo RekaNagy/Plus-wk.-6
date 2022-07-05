@@ -1,0 +1,118 @@
+p {
+  opacity: 0.6;
+  line-height: 0px;
+}
+
+.container {
+  font-family: "PT Mono", monospace;
+}
+.search-bar {
+  text-align: left;
+  padding: 15px 0px 15px 0px;
+}
+
+.search-box {
+  background-color: #d1d1d1;
+  border: transparent;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+
+.search-button {
+  background-color: #d1d1d1;
+  border-radius: 20px;
+  padding: 10px 25px;
+  border: transparent;
+}
+
+.current-location-button {
+  background-color: #d1d1d1;
+  border-radius: 20px;
+  padding: 10px 25px;
+  border: transparent;
+}
+
+.location-dot {
+  color: #ef255f;
+}
+
+.main-location {
+  text-align: left;
+  padding: 15px 0px 15px 0px;
+}
+
+.main-city {
+  font-size: 85px;
+}
+
+.update {
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.6;
+  line-height: 0px;
+}
+
+.main-weather {
+  text-align: left;
+  padding: 0px;
+}
+
+.main-icon {
+  color: #007ee5;
+  font-size: 100px;
+}
+
+.main-units {
+  vertical-align: top;
+  font-size: 30px;
+}
+
+.main-temperature {
+  font-size: 100px;
+  line-height: 0px;
+}
+
+.main-description {
+  font-style: italic;
+  font-size: 23px;
+  opacity: 0.6;
+  line-height: 0px;
+}
+
+.forecast {
+  text-align: left;
+  padding-top: 30px;
+}
+
+.Fri,
+.Sun,
+.Tue {
+  font-size: 50px;
+  color: #fae433;
+  padding: 0px;
+}
+
+.Sat,
+.Mon {
+  font-size: 50px;
+  color: #007ee5;
+}
+
+.forecast-days {
+  font-weight: bolder;
+}
+
+.forecast-days:hover {
+  background: #d1d1d1;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.forecast-units {
+  font-weight: normal;
+}
+
+.weather-details {
+  text-align: left;
+  padding-top: 15px;
+}
