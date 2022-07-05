@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App by Reka</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/32d517ada4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-bar">
+        <form id="search-form">
+          <input
+            class="search-box"
+            type="search"
+            autofocus="on"
+            autocomplete="off"
+            placeholder="Enter location"
+            id="location-input"
+          />
+          <button class="search-button" id="search-button" type="submit">
+            Search
+          </button>
+          <button
+            class="current-location-button"
+            id="current-location-button"
+            type="submit"
+          >
+            <i class="fa-solid fa-location-dot location-dot"></i>
+          </button>
+        </form>
+      </div>
+
+      <div class="main-location">
+        <h1 class="main-city" id="main-city">Gråsten</h1>
+        <p class="update" id="date-update">Last updated, Thursday, 13:50</p>
+      </div>
+
+      <p class="main-description" id="main-description">Cloudy</p>
+
+      <div class="main-weather">
+        <i class="fa-solid fa-cloud main-icon"></i>
+        <span class="main-temperature" id="main-temperature">13</span>
+        <span class="main-units">
+          <a href="#" id="celsius-link">°C</a>|
+          <a href="#" id="fahrenheit-link">°F</a>
+        </span>
+      </div>
+
+      <div class="row forecast">
+        <div class="col-2 forecast-days">
+          Fri
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-sun forecast-icon Fri"></i>
+              <div class="row">
+                <div class="col forecast-units">10°/19°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 forecast-days">
+          Sat
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-cloud-rain forecast-icon Sat"></i>
+              <div class="row">
+                <div class="col forecast-units">10°/19°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 forecast-days">
+          Sun
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-sun forecast-icon Sun"></i>
+              <div class="row">
+                <div class="col forecast-units">10°/19°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 forecast-days">
+          Mon
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-cloud-rain forecast-icon Mon"></i>
+              <div class="row">
+                <div class="col forecast-units">10°/19°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 forecast-days">
+          Tue
+          <div class="row">
+            <div class="col">
+              <i class="fa-solid fa-sun forecast-icon Tue"></i>
+              <div class="row">
+                <div class="col forecast-units">10°/19°</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row weather-details">
+        <div class="col-4 actualTemp">
+          Actual temperature
+          <div class="row">
+            <div class="col">10°</div>
+          </div>
+        </div>
+        <div class="col-4 humidity">
+          Humidity
+          <div class="row">
+            <div class="col">72%</div>
+          </div>
+        </div>
+        <div class="col-4 airPressure">
+          Air pressure
+          <div class="row">
+            <div class="col">1010Pa</div>
+          </div>
+        </div>
+        <div class="col-4 wind">
+          Wind
+          <div class="row">
+            <div class="col">31km/h</div>
+          </div>
+        </div>
+        <div class="col-4 visibility">
+          Visibility
+          <div class="row">
+            <div class="col">15km</div>
+          </div>
+        </div>
+        <div class="col-4 uv">
+          UV
+          <div class="row">
+            <div class="col">week</div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <p>Coded by, Réka Nagy</p>
+    </div>
+    <script src="/src/index.js"></script>
+  </body>
+</html>
