@@ -1,11 +1,12 @@
+body {
+  font-family: "PT Mono", monospace;
+}
+
 p {
   opacity: 0.6;
   line-height: 0px;
 }
 
-.container {
-  font-family: "PT Mono", monospace;
-}
 .search-bar {
   text-align: left;
   padding: 15px 0px 15px 0px;
